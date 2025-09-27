@@ -62,36 +62,81 @@
   <h2>Overview</h2>
   <div class="overview">
     <p>
-        The generation of coherent and emotionally resonant music for multi-scene videos remains a central challenge in the video-to-music (V2M) domain. We introduce a latent diffusion framework that addresses this by synthesizing globally coherent, high-fidelity background scores. Our approach moves beyond trivial audio visual synchronization, establishing culturally-grounded semantic correspondences between the visual narrative and resulting acoustic properties. To facilitate this, we introduced a scalable data pipeline for synthesizing large-scale, audiovisuals-aligned pre-training data. The generative process is conditioned on a combination of visual keyframes and extracted affective cues, and the model is then fine-tuned using Direct Preference Optimization (DPO) to directly align its outputs with human aesthetic preferences. Extensive evaluations on established benchmarks demonstrate that our method achieves comparable performance with state-of-the-art models, yielding superior semantic and temporal alignment. 
+      The generation of coherent and emotionally resonant music for multi-scene videos remains a central challenge in the video-to-music (V2M) domain. We introduce a latent diffusion framework that addresses this by synthesizing globally coherent, high-fidelity background scores. Our approach moves beyond trivial audio visual synchronization, establishing culturally-grounded semantic correspondences between the visual narrative and resulting acoustic properties. To facilitate this, we introduced a scalable data pipeline for synthesizing large-scale, audiovisuals-aligned pre-training data. The generative process is conditioned on a combination of visual keyframes and extracted affective cues, and the model is then fine-tuned using Direct Preference Optimization (DPO) to directly align its outputs with human aesthetic preferences. Extensive evaluations on established benchmarks demonstrate that our method achieves comparable performance with state-of-the-art models, yielding superior semantic and temporal alignment. 
     </p>
   </div>
-
-  <h2>Model Architecture</h2>
   <div class="image-section">
     <img src="model.png" alt="Model Diagram">
   </div>
 
-  <h2>Demo Videos</h2>
+  <h2>Dataset Pipeline</h2>
+  <div class="dataset-intro">
+    <p>
+      We built a scalable multi-stage filtering and rescoring pipeline for producing robust dataset for V2M tasks. Video-audio pairs were segmented into 20s clips, removing silence and low-power parts. Clips were scored with Audiobox aesthetics and ImageBind similarity to drop low-quality or weakly aligned samples. Clean audio was rescored with curated collections via ImageBind to reinforce alignment.</p>
+  </div>
+  <div class="image-section" style="text-align: center;">
+    <img src="data_filtering.png" alt="Dataset Filtering Pipeline">
+  </div>
+
+  <h2>Music Generation Demo Paired with Input Videos</h2>
   <div class="video-section">
-    <video controls>
-      <source src="demo1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
 
-    <video controls>
-      <source src="demo2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-item">
+      <video controls>
+        <source src="demo1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-description">
+        <h3>Demo 1: Scene-to-Music Alignment</h3>
+        <p>
+          This video demonstrates how our method synchronizes video scene transitions with musical beats,
+          producing a natural and engaging audiovisual experience.
+        </p>
+      </div>
+    </div>
 
-    <video controls>
-      <source src="demo3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-item">
+      <video controls>
+        <source src="demo2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-description">
+        <h3>Demo 2: Emotionally Adaptive Music</h3>
+        <p>
+          Here, the model generates music that adapts to the emotional trajectory of the video, 
+          highlighting both calm and intense moments effectively.
+        </p>
+      </div>
+    </div>
 
-    <video controls>
-      <source src="demo3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-item">
+      <video controls>
+        <source src="demo3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-description">
+        <h3>Demo 3: Cross-Scene Consistency</h3>
+        <p>
+          This example shows how our system maintains musical consistency across multiple video scenes,
+          ensuring coherence without abrupt audio shifts.
+        </p>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="demo4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-description">
+        <h3>Demo 4: Cross-Scene Consistency</h3>
+        <p>
+          This example shows how our system maintains musical consistency across multiple video scenes,
+          ensuring coherence without abrupt audio shifts.
+        </p>
+      </div>
+    </div>
+
   </div>
 
 </body>
