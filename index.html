@@ -83,6 +83,13 @@
       margin-top: 1.5em;
     }
     
+    .additional-videos-grid video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+
     .additional-video-item {
       display: flex;
       flex-direction: column;
@@ -245,45 +252,53 @@
         <h3>Ours</h3>
       </div>
       <video controls>
-        <source src="videos/d_1.mp4" type="video/mp4">
+        <source src="ours/30.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="videos/d_1.mp4" type="video/mp4">
+        <source src="ours/32.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="videos/d_1.mp4" type="video/mp4">
+        <source src="ours/43.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="videos/d_1.mp4" type="video/mp4">
+        <source src="ours/44.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
     
   </div>
 
-  <!-- Additional video section without header -->
   <div class="dpo-videos-section">
     <div class="additional-videos-grid">
       <div class="additional-video-item">
         <video controls>
-          <source src="d_1.mp4" type="video/mp4">
+          <source src="dpo/d_1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-      
+
       <div class="additional-video-item">
         <video controls>
-          <source src="d_1.mp4" type="video/mp4">
+          <source src="dpo/d_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+      </div>
+
+      <!-- New image items -->
+      <div class="additional-video-item">
+        <img src="dpo/d_1.png" alt="DPO Result 1">
+      </div>
+
+      <div class="additional-video-item">
+        <img src="dpo/d_2.png" alt="DPO Result 2">
       </div>
     </div>
     
     <div class="additional-description">
-      <p>Results of our DPO model, fine-tuned on beat synchronized data. The strong musical beats are better synchronized with video scene transitions, creating a smoother and more seamless visuals and audio alignment.</p>
+      <p>Results of our DPO model fine-tuned on beat synchronized data. The strong musical beats are better synchronized with video scene transitions, creating a smoother and more seamless visuals and audio alignment, while preserving quality and diversity.</p>
     </div>
   </div>
 
