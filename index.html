@@ -44,6 +44,7 @@
       width: 100%;
       border-radius: 8px;
       box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 15px; /* Added spacing between video rows */
     }
     .video-item {
       display: flex;
@@ -124,7 +125,7 @@
 
   <h1>VISUAL KEYS TO SYMPHONIES: LATENT DIFFUSION FOR MULTI-SCENE VIDEO-TO-MUSIC GENERATION</h1>
   <div class="authors">
-    Chiu Fai Ng⋆†, Karpser So⋆, Jing Yang⋆, Patricio Ovalle⋆, Simon Lui⋆, Fan Fan⋆, Yuhan Dong
+    Chiu Fai Ng⋆†, Karpser So⋆, Jing Yang⋆, Patricio Ovalle⋆, Simon Lui⋆, Fan Fan⋆, Yuhan Dong†
     <div>⋆ Central Media Technology Institute, Huawei</div>
     <div>† Shenzhen International Graduate School, Tsinghua University</div>
   </div>
@@ -139,7 +140,7 @@
     <img src="model.png" alt="Model Diagram">
   </div>
 
-  <h2>Dataset Filtering and Rescoring Pipeline</h2>
+  <h2>Dataset Pipeline</h2>
   <div class="dataset-intro">
     <p>
       We built a scalable multi-stage filtering and rescoring pipeline for producing robust dataset for V2M tasks. Video-audio pairs were segmented into 20s clips, removing silence and low-power parts. Clips were scored with Audiobox aesthetics and ImageBind similarity to drop low-quality or weakly aligned samples. Clean audio was rescored with curated collections via ImageBind to reinforce alignment.</p>
@@ -156,19 +157,19 @@
         <h3>Diff-BGM</h3>
       </div>
       <video controls>
-        <source src="combined_1014.mp4" type="video/mp4">
+        <source src="DiffBGM/30.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1014.mp4" type="video/mp4">
+        <source src="DiffBGM/32.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1014.mp4" type="video/mp4">
+        <source src="DiffBGM/43.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1014.mp4" type="video/mp4">
+        <source src="DiffBGM/44.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -178,19 +179,19 @@
         <h3>GVMGen</h3>
       </div>
       <video controls>
-        <source src="combined_1012.mp4" type="video/mp4">
+        <source src="GVMGen/30.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1012.mp4" type="video/mp4">
+        <source src="GVMGen/32.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1012.mp4" type="video/mp4">
+        <source src="GVMGen/43.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1012.mp4" type="video/mp4">
+        <source src="GVMGen/44.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -200,19 +201,19 @@
         <h3>Video2Music</h3>
       </div>
       <video controls>
-        <source src="combined_1007.mp4" type="video/mp4">
+        <source src="Video2Music/30.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1007.mp4" type="video/mp4">
+        <source src="Video2Music/32.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1007.mp4" type="video/mp4">
+        <source src="Video2Music/43.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1007.mp4" type="video/mp4">
+        <source src="Video2Music/44.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -222,19 +223,19 @@
         <h3>VidMuse</h3>
       </div>
       <video controls>
-        <source src="combined_1015.mp4" type="video/mp4">
+        <source src="VidMuse/30.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1015.mp4" type="video/mp4">
+        <source src="VidMuse/32.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1015.mp4" type="video/mp4">
+        <source src="VidMuse/43.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="combined_1015.mp4" type="video/mp4">
+        <source src="VidMuse/44.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -244,19 +245,19 @@
         <h3>Ours</h3>
       </div>
       <video controls>
-        <source src="d_1.mp4" type="video/mp4">
+        <source src="videos/d_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="d_1.mp4" type="video/mp4">
+        <source src="videos/d_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="d_1.mp4" type="video/mp4">
+        <source src="videos/d_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video controls>
-        <source src="d_1.mp4" type="video/mp4">
+        <source src="videos/d_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -282,7 +283,7 @@
     </div>
     
     <div class="additional-description">
-      <p>Results of our DPO model fine-tuned on beat synchronized data. The strong musical beats are better synchronized with video scene transitions, creating a smoother and more seamless visuals and audio alignment.</p>
+      <p>Results of our DPO model, fine-tuned on beat synchronized data. The strong musical beats are better synchronized with video scene transitions, creating a smoother and more seamless visuals and audio alignment.</p>
     </div>
   </div>
 
